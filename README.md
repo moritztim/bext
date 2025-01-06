@@ -29,9 +29,9 @@ browser.
 > bext firefox --watch
 
 # Custom directories
-> bext --source=src # --source or -s: specify source directory (default: "source")
-> bext --source=src --static=assets # --static or -t: specify static assets directory (default: "static")
-> bext --source=src --static=assets --output=build # --output or -o: specify output directory (default: "dist")
+> bext --source=source # --source or -s: specify source directory (default: "src")
+> bext --source=source --static=assets # --static or -t: specify static assets directory (default: "static")
+> bext --source=source --static=assets --output=build # --output or -o: specify output directory (default: "dist")
 ```
 
 ## Types and Utilities

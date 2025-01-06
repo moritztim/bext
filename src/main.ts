@@ -14,7 +14,7 @@
  * bext --watch # build again on change
  * bext chrome -w # variations can be used for single-platform
  * bext firefox --watch
- * bext --source=src --static=public --output=builds # custom paths
+ * bext --source=source --static=public --output=builds # custom paths
  * ```
  */
 
@@ -46,7 +46,7 @@ const args = parseArgs(Deno.args, {
     o: 'output',
   },
   default: {
-    source: 'source',
+    source: 'src',
     static: 'static',
     output: 'dist',
   },

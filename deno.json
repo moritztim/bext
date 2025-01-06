@@ -2,16 +2,16 @@
   "name": "@moti/bext",
   "version": "1.5.1",
   "exports": {
-    ".": "./source/mod.ts",
-    "./bin": "./source/main.ts",
-    "./mock": "./source/mock_browser/main.ts",
-    "./types/chrome": "./source/types/chrome.ts"
+    ".": "./src/mod.ts",
+    "./bin": "./src/main.ts",
+    "./mock": "./src/mock_browser/main.ts",
+    "./types/chrome": "./src/types/chrome.ts"
   },
   "fmt": {
     "semiColons": false,
     "singleQuote": true,
     "proseWrap": "preserve",
-    "include": ["source", "examples"],
+    "include": ["src", "examples"],
     "exclude": ["dist"]
   },
   "imports": {
@@ -19,22 +19,22 @@
     "@std/testing": "jsr:@std/testing@^0.225.3"
   },
   "lint": {
-    "include": ["source"],
+    "include": ["src"],
     "exclude": ["dist", "examples"]
   },
   "publish": {
     "exclude": ["dist", "examples"]
   },
   "tasks": {
-    "build": "(cd examples/preact && deno run -A ../../source/main.ts build)",
-    "check": "deno check source/main.ts && deno check source/mod.ts",
-    "dev": "(cd examples/preact && deno run -A ../../source/main.ts build -w)",
+    "build": "(cd examples/preact && deno run -A ../../src/main.ts build)",
+    "check": "deno check src/main.ts && deno check src/mod.ts",
+    "dev": "(cd examples/preact && deno run -A ../../src/main.ts build -w)",
     "test": "deno task test:source && deno task build && deno task test:examples && deno publish --dry-run --allow-dirty",
     "test:examples": "(cd examples/preact && deno task test)",
-    "test:source": "deno fmt && deno lint && deno task check && deno test source"
+    "test:source": "deno fmt && deno lint && deno task check && deno test src"
   },
   "test": {
-    "include": ["source"],
+    "include": ["src"],
     "exclude": ["dist", "examples"]
   }
 }

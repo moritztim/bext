@@ -2,7 +2,7 @@
 import { h } from 'preact'
 
 import { useCallback } from 'preact/hooks'
-import browserAPI from 'browser'
+import browserAPI from '../../../../src/mod.ts'
 
 export default function OptionsButton() {
   const onClick = useCallback(() => {

@@ -1,4 +1,4 @@
-import browserAPI from 'browser'
+import browserAPI from '../../../../src/mod.ts'
 
 const { storage } = browserAPI
 const KEY = 'storage_key'

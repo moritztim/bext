@@ -1,5 +1,5 @@
-import type Chrome from 'browser/types/chrome.ts'
-import browserAPI from 'browser'
+import type Chrome from '../../../src/types/chrome.ts'
+import browserAPI from '../../../src/mod.ts'
 
 browserAPI.tabs.onUpdated.addListener(
   (

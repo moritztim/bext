@@ -1,6 +1,6 @@
 {
   "name": "@moti/bext",
-  "version": "1.5.1",
+  "version": "2.0.0",
   "exports": {
     ".": "./src/mod.ts",
     "./bin": "./src/main.ts",
